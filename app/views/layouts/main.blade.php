@@ -12,6 +12,7 @@
 	{{ HTML::script('packages/ckeditor/ckeditor.js') }}
 	{{ HTML::style('packages/jquery-ui-1.10.4/css/smoothness/jquery-ui-1.10.4.custom.css') }}
 	{{ HTML::style('packages/jquery-ui-1.10.4/css/smoothness/jquery-ui-1.10.4.custom.min.css') }}
+	{{ HTML::script('packages/js/jquery.expander.js') }}
 
 <div class="navbar navbar-default">
   <div class="navbar-header">

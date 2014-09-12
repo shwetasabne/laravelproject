@@ -1,9 +1,11 @@
 <div class="container">
 @foreach ($data['projects'] as $project)
-	<legend>{{ $project->{'name'} }}</legend>
+	<legend class="text-success">{{ $project->{'name'} }}</legend>
 	<p><i>{{ $project->{'created_at'} }}</i><p>
-	<p><i>Technologies: {{ $project->{'technologies'} }}</i><p>
-	<p>{{ $project->{'description'} }}</p>
+	<p><i>Technologies: {{ $project->{'technologies'} }}</i><p>		
+	<div class="expandable">{{ $project->{'description'} }}</div>
+
+	<br/>
 @endforeach
 </div>
 
@@ -16,5 +18,11 @@ $(document).ready(function() {
 	$('#resume').removeClass("active");
 	$('#contact').removeClass("active");
 	$('#roadmap').removeClass("active");
+	
+    $('div.expandable').expander({
+       slicePoint:       30,  // default is 100
+     });
+	
+		
 });
 </script>

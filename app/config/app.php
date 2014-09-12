@@ -201,5 +201,29 @@ return array(
 		'View'            => 'Illuminate\Support\Facades\View',
 
 	),
+	
+	/*
+	|--------------------------------------------------------------------------
+	| Application Quotes
+	|--------------------------------------------------------------------------
+	|
+	| This array of consists of a number of quotes with authors. A random 
+	| quote from this array will get picked and displayed on the 
+	| index page
+	| This has a structure of quote => author
+	|
+	*/
+
+	'quotes' => array(
+		
+	   "Not everything that can be counted counts, and not everything that counts can be counted." => 'Albert Einstein',
+		"In theory, there is no difference between theory and practice. But in practice, there is." => "Yogi Berra",
+		"A mathematician is a device for turning coffee into theorems." => "Paul Erdos",
+		"I have not failed. I\'ve just found 10,000 ways that won\'t work." => "Thomas Alva Edison",
+		"Black holes are where God divided by zero." => "Steven Wright",
+		"If you want to make an apple pie from scratch, you must first create the universe." => "Carl Sagan",
+		"Knowledge speaks, but wisdom listens." => "Jimi Hendrix"
+
+	),
 
 );

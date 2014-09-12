@@ -1,5 +1,5 @@
 <blockquote>
-  <p class="text-warning">Not everything that counts can be counted, and not everything that can be counted counts.</p>
+  <p class="text-warning">Not everything that can be counted counts, and not everything that counts can be counted.</p>
   <small><cite title="Source Title">Albert Einstein</cite></small>
 </blockquote>
 <p>

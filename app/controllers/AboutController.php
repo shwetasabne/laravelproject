@@ -40,7 +40,18 @@ class AboutController extends BaseController {
 		$this->layout->content = View::make('about.contact');		
 	}
  
+ 	public function getBlogs(){
+		
+		$blogs = new Blogs();
+		
+		$rows = $blogs->getBlogs();
+		$data['blogs'] = $rows;
+		$this->layout->content = View::make('about.blogs')->with("data", $data);
+ 		
+ 	}
 
+	/** This implementation is using Google Drive.
+	// Uncomment when we pay for  the service account
  	public function getBlogs(){
  		
 		$service = $this->buildService('sheer.shweta@gmail.com');
@@ -60,7 +71,7 @@ class AboutController extends BaseController {
 	public function getRoadmap(){
 		$this->layout->content = View::make('about.roadmap');
 	}
-	
+	**/
 	
 	
 	public function getVirus(){
@@ -100,6 +111,43 @@ class AboutController extends BaseController {
 
 	}
 	
+	
+	public function getBlogrus(){
+		
+		$this->layout->content = View::make('about.blogrus');
+	}
+		
+	
+	public function postBlogrus(){
+		
+		$answer = Input::get('answer');
+		if($answer == Config::get('app.secret_post_answer'))
+		{
+			return 1;
+		}
+		else
+		{
+			return -1;
+		}
+	}
+	
+	
+	public function postBlogs(){
+		
+		$blogs = new Blogs();
+		$name = Input::get('inputName');
+		$description = Input::get('inputDescription');
+		$created_at = date("Y-m-d H:i:s");
+		$updated_at = date("Y-m-d H:i:s");
+			
+
+		$blogs->insertBlogs($name, $description, $created_at, $updated_at);
+
+        return Redirect::to('about/blogs')
+            ->with('message', '<div class="alert alert-dismissable alert-success">
+    				<strong>Well done!</strong> Project added successfully.</div>');
+
+	}
 	
  	public function postContact(){
  		

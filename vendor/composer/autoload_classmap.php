@@ -30,7 +30,7 @@ return array(
     'ClassPreloader\\Parser\\FileVisitor' => $vendorDir . '/classpreloader/classpreloader/src/ClassPreloader/Parser/FileVisitor.php',
     'ClassPreloader\\Parser\\NodeTraverser' => $vendorDir . '/classpreloader/classpreloader/src/ClassPreloader/Parser/NodeTraverser.php',
     'CreateAboutmeTable' => $baseDir . '/app/database/migrations/2014_07_27_191806_create-aboutme-table.php',
-    'CreateUsersTable' => $baseDir . '/app/database/migrations/2014_08_24_203548_create_users_table.php',
+    'CreateBlogsTable' => $baseDir . '/app/database/migrations/2014_09_11_230639_create_blogs_table.php',
     'Crypt_AES' => $vendorDir . '/phpseclib/phpseclib/phpseclib/Crypt/AES.php',
     'Crypt_Base' => $vendorDir . '/phpseclib/phpseclib/phpseclib/Crypt/Base.php',
     'Crypt_Blowfish' => $vendorDir . '/phpseclib/phpseclib/phpseclib/Crypt/Blowfish.php',
