@@ -14,10 +14,9 @@ Hello,</p>
 
 <p>My transition from India to USA taught me many things. It has made me more focussed, independent and team player. The cultural shift has made me realise that while there are so many diversity arenas in terms of technology and behaviour, the power of reasoning and the desire to enhance and enrich the quality of life is what binds us all together.</p>
 
-<p>In the ever changing dynamic world of software development, I want to keep learning and practising newer things.
-This website is also a consequence of that yearning. While exploring dynamic websites, and recommendation of my peers, I came across the Laravel Framework for php. I have been using it and trying out excercises and so far it has been a fruitful experience.</p>
+<p>In the ever changing dynamic world of software development, I want to keep learning and practising newer things.This website is also a consequence of that yearning. While exploring dynamic websites, and recommendation of my peers, I came across the Laravel Framework for php. I have been using it and trying out excercises and so far it has been a fruitful experience.</p>
 
-<p>This is my first dynamic website and hence may have a few misses. I have detailed out the various APIs I have used in this website in the Blogs section.</p>
+<p>This is my first dynamic website and hence may have a few misses. Please check the project section for more details.</p>
 	
 <p>Please take a look and leave behind your comments/suggestions {{ HTML::link('about/contact', 'Contact') }}.
 </p>

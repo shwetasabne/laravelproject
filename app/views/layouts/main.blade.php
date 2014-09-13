@@ -27,7 +27,7 @@
     <ul class="nav navbar-nav">
       <li id="about" class="active">{{ HTML::link('about/index', 'About') }}</li>
       <li id="projects">{{ HTML::link('about/projects', 'Projects') }}</li>
-	  <li id="blogs">{{ HTML::link('about/blogs', 'Blogs') }}</li>
+	  <li id="blogs">{{ HTML::link('about/blogs', 'Random Stuff !') }}</li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li id="contact">{{ HTML::link('about/contact', 'Contact Me') }}</li>
