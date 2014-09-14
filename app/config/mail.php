@@ -80,7 +80,7 @@ return array(
 	|
 	*/
 
-	'username' => 'sheer.shweta@gmail.com',
+	'username' => $_ENV['EMAIL_USERNAME'],
 
 	/*
 	|--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return array(
 	|
 	*/
 
-	'password' => 'january12',
+	'password' => $_ENV['EMAIL_PWD'],
 
 	/*
 	|--------------------------------------------------------------------------

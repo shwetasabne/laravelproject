@@ -156,7 +156,7 @@ class AboutController extends BaseController {
          $subject = "Email from user at";
          $data = [ 'msg' => Input::get('inputMessage') ];
 
-         $toEmail = 'sheer.shweta@gmail.com';
+         $toEmail = Config::get('mail.username');
          $toName = 'Shweta Sabne';
 
          Mail::send('about.contactemail', $data, function($message) use ($toEmail, $toName, $fromEmail, $fromName, $subject){
